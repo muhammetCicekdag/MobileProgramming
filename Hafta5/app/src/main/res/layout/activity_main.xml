@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/txtview_1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="yazdir"
+        android:text="Tıkla"
+        tools:layout_editor_absoluteX="111dp"
+        tools:layout_editor_absoluteY="564dp" />
+
+    <TextView
+        android:id="@+id/txtview_2"
+        android:layout_width="211dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="20dp"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/txtview_2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtview_4"
+        android:layout_width="211dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="60dp"
+        android:text=""
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="405dp" />
+
+    <TextView
+        android:id="@+id/txtview_3"
+        android:layout_width="211dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="20dp"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/txtview_4"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtview_2"
+        android:layout_width="211dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="20dp"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/txtview_3"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/edittext_1"
+        android:layout_width="211dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint="birinci sayiyi giriniz"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/edittext_2"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <EditText
+        android:id="@+id/edittext_2"
+        android:layout_width="211dp"
+        android:layout_height="43dp"
+        android:ems="10"
+        android:hint="ikinci sayiyi giriniz"
+        android:inputType="text"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="104dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
